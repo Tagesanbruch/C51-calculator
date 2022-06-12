@@ -1,0 +1,30 @@
+﻿  cal.cpp
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(49,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(75,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(121,19): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(127,25): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(130,18): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(136,25): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(139,18): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(118,33): warning C4101: “f_tmp”: 未引用的局部变量
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(155,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(156,19): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(157,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(159,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(160,18): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(161,19): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(163,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(164,18): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(165,19): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(153,33): warning C4101: “f_tmp”: 未引用的局部变量
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(177,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(178,16): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(179,16): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(386,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(391,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(416,9): warning C4101: “state”: 未引用的局部变量
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(559,24): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(215): warning C4715: “OpeStackOutput”: 不是所有的控件路径都返回值
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(286): warning C4715: “NumStackOutput”: 不是所有的控件路径都返回值
+C:\Users\qmgfx\source\repos\Project_cal\cal.cpp(337): warning C4715: “stack_calculation”: 不是所有的控件路径都返回值
+  Project_cal.vcxproj -> C:\Users\qmgfx\source\repos\Project_cal\Debug\Project_cal.exe

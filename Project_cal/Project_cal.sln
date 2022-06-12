@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project_cal", "Project_cal.vcxproj", "{56688B0C-DD5A-4BD0-B725-5638053293C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Debug|x64.ActiveCfg = Debug|x64
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Debug|x64.Build.0 = Debug|x64
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Debug|x86.ActiveCfg = Debug|Win32
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Debug|x86.Build.0 = Debug|Win32
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Release|x64.ActiveCfg = Release|x64
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Release|x64.Build.0 = Release|x64
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Release|x86.ActiveCfg = Release|Win32
+		{56688B0C-DD5A-4BD0-B725-5638053293C7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05B7BEBC-7917-447D-8C77-3A4169C1B2F4}
+	EndGlobalSection
+EndGlobal

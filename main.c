@@ -149,7 +149,7 @@ sbit clk_164 = P3 ^ 7;
 
 uchar code init_tab[] = {
     "16BitsCalculator"
-    "  Designed by ZJ"};
+    "                "};
 uchar code clear_tab[] = {
     "                "
     "                "};
