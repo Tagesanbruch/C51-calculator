@@ -508,17 +508,18 @@ int cal_algorithm(uchar *p, uint length_p) {
 
 退格的读取：每当系统检测到输入字符为退格时，将自动抹除最末尾值，并根据前面的输入情况调整N/O标记（最后输入为数字或操作符，用以判断是否出现语法错误）。注意为防止退格时，指针指向的位置为负数导致操作越界系统崩溃，需要在输入指针指向0时进行限位提示，同时不执行操作；
 
-    ```cpp
-   if (key_num == back_sign) {
-        if (cnt_tab > 0) {
-            cnt_tab--;
-            length_input--;
-            input_char[cnt_tab] = ' ';
-        } else {
-           beep_long();
-        }
-   }
-    ```
+```cpp
+if (key_num == back_sign) {
+     if (cnt_tab > 0) {
+         cnt_tab--;
+         length_input--;
+         input_char[cnt_tab] = ' ';
+     } else {
+        beep_long();
+     }
+}
+```
+
 3. 数字
 
 数字在输入时，需要检测前一位标志，如果前一位为运算符，则此时需要为数字栈开拓一个新位存放新数字；若前一位为数字，则需要传入numinstack函数，对应修改当前数字栈存放的数字。
@@ -568,26 +569,27 @@ int numinstack(uint num, NumStack *p, uint dot_occupied) {
     return 0;
 }
 ```
+
 4. 单目运算符
 
 此处设定开方为单目运算符，仅对其后第一个数字进行开方处理，故在处理输入字符串时，先提取根号出现的位置，再在sqrt_cal函数中逐个对标志位进行求开方：
 
-    ```cpp
-    int sqrt_cal(NumStack *n, int *sqrt_flag) { 
-    //对sqrt标志位指向数字开方处理 
-        int i = 0, f_high_tmp_int;
-        float f_high_tmp;
-        for (i = 0; i < n->top; i++) {
-            if (sqrt_flag[i] == 1) {
-                n->data_s[i].f_high = sqrt(n->data_s[i].f_high);
-                f_high_tmp = 10000 * n->data_s[i].f_high; //计算结果高位
-                f_high_tmp_int = (int)f_high_tmp;
-                n->data_s[i].f_mid = f_high_tmp - f_high_tmp_int; //计算结果中位
-            }
-        }
-        return 0;
-   }
-   ```
+ ```cpp
+ int sqrt_cal(NumStack *n, int *sqrt_flag) { 
+ //对sqrt标志位指向数字开方处理 
+     int i = 0, f_high_tmp_int;
+     float f_high_tmp;
+     for (i = 0; i < n->top; i++) {
+         if (sqrt_flag[i] == 1) {
+             n->data_s[i].f_high = sqrt(n->data_s[i].f_high);
+             f_high_tmp = 10000 * n->data_s[i].f_high; //计算结果高位
+             f_high_tmp_int = (int)f_high_tmp;
+             n->data_s[i].f_mid = f_high_tmp - f_high_tmp_int; //计算结果中位
+         }
+     }
+     return 0;
+}
+```
 
 事实上在系统中，可通过令乘幂指数为0.5实现开方操作。此处单独定义了开方操作为单目运算符，主要是为了体现系统的可拓展性，如此可基于系统拓展sin，cos，log等单目运算操作，体现系统的可拓展性。此处由于时间问题未能进一步拓展，仅实现了开方操作，系统可进一步开发完善科学计算功能。
 
